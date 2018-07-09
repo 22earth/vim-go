@@ -244,7 +244,7 @@ function! go#complete#Complete(findstart, base) abort
       return map(copy(s:completions[1]), 's:trim_bracket(v:val)')
     endif
 
-    return s:completions[1]
+    return map(copy(s:completions[1]), 's:trim_bracket(v:val)')
   endif
 endfunction
 
