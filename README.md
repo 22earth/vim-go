@@ -33,7 +33,7 @@ This plugin adds Go language support for Vim, with the following main features:
 
 ## Install
 
-vim-go requires at least Vim 7.4.1689 or Neovim 0.2.2.
+vim-go requires at least Vim 7.4.2009 or Neovim 0.2.2.
 
 The [**latest stable release**](https://github.com/fatih/vim-go/releases/latest) is the
 recommended version to use. If you choose to use the master branch instead,
@@ -49,6 +49,8 @@ for popular package managers:
   * `git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go`
 * [vim-plug](https://github.com/junegunn/vim-plug)
   * `Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }`
+* [Vundle](https://github.com/VundleVim/Vundle.vim)
+  * `Plugin 'fatih/vim-go'`
 
 You will also need to install all the necessary binaries. vim-go makes it easy
 to install all of them by providing a command, `:GoInstallBinaries`, which will
