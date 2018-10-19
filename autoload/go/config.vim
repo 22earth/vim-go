@@ -145,7 +145,7 @@ function! go#config#GocodeProposeBuiltins() abort
 endfunction
 
 function! go#config#GocodeProposeSource() abort
-  return get(g:, 'go_gocode_propose_source', 0)
+  return get(g:, 'go_gocode_propose_source', 1)
 endfunction
 
 function! go#config#EchoCommandInfo() abort
@@ -418,6 +418,10 @@ endfunction
 
 function! go#config#HighlightVariableDeclarations() abort
   return get(g:, 'go_highlight_variable_declarations', 0)
+endfunction
+
+function! go#config#HighlightDebug() abort
+  return get(g:, 'go_highlight_debug', 1)
 endfunction
 
 function! go#config#FoldEnable(...) abort
